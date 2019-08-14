@@ -15,10 +15,10 @@ class AltStore {
     this.displayName = model.displayName
     this.boundListeners = model.boundListeners
     this.StoreModel = StoreModel
-    this.reduce = model.reduce || (x => x)
+    this.reduce = model.reduce || ((x) => x)
     this.subscriptions = []
 
-    const output = model.output || (x => x)
+    const output = model.output || ((x) => x)
 
     this.emitChange = () => this.transmitter.publish(output(this.state))
 
@@ -99,9 +99,13 @@ class AltStore {
 
   unlisten(cb) {
     this.lifecycle('unlisten')
-    this.subscriptions
-      .filter(subscription => subscription.cb === cb)
-      .forEach(subscription => subscription.dispose())
+    this.subscriptions = this.subscriptions.filter((subscription) => {
+      if (subscription.cb === cb) {
+        subscription.dispose()
+        return false
+      }
+      return true
+    })
   }
 
   getState() {

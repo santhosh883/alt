@@ -1,6 +1,6 @@
 {
-  "name": "alt",
-  "version": "0.18.6",
+  "name": "@iss/alt",
+  "version": "1.0.0-beta.0",
   "description": "A flux implementation",
   "main": "lib",
   "jsnext:main": "src",
@@ -12,7 +12,7 @@
   "devDependencies": {
     "alt-search-docs": "1.0.6",
     "babel-cli": "6.6.5",
-    "babel-core": "6.7.4",
+    "babel-core": "6.10.4",
     "babel-eslint": "5.0.0",
     "babel-loader": "6.2.4",
     "babel-plugin-add-module-exports": "^0.1.2",

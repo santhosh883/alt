@@ -1,5 +1,5 @@
 {
-  "name": "@iss/alt",
+  "name": "alt",
   "version": "1.0.0-beta.1",
   "description": "A flux implementation",
   "main": "lib",

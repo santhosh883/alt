@@ -8,3 +8,4 @@ utils/*
 flux.js
 flux-build.js
 flux-build.min.js
+.vscode/settings.json

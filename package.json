@@ -1,6 +1,6 @@
 {
   "name": "@iss/alt",
-  "version": "1.0.0-beta.0",
+  "version": "1.0.0-beta.1",
   "description": "A flux implementation",
   "main": "lib",
   "jsnext:main": "src",
